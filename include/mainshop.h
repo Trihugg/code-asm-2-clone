@@ -17,10 +17,16 @@ private:
     vector<ImportShop *> products;
 
 public:
-    MainShop(const string &name);
+    // MainShop();
     void insert_product(ImportShop *product);
     void show_product() const;
+    vector<ImportShop *> get_products() const;
+    void set_name(const string &name);
+    string get_name() const;
     ~MainShop();
+
+
+
 };
 
 #endif

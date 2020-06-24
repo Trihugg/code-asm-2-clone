@@ -3,14 +3,15 @@
 
 using namespace std;
 
-MainShop::MainShop(const string &name)
-{
-    this->name = name;
-}
+// MainShop::MainShop()
+// {
+//     this->name = "Fash Shop";
+// }
 
 void MainShop::insert_product(ImportShop *product)
 {
     products.push_back(product);
+    cout << "Insert completed" << endl;
 }
 
 void MainShop::show_product() const
@@ -28,4 +29,17 @@ MainShop::~MainShop()
     {
         delete products[i];
     }
+}
+
+vector<ImportShop *> MainShop::get_products() const
+{
+    return products;
+}
+
+void MainShop::set_name(const string &name) {
+    this-> name = name;
+}
+
+string MainShop::get_name() const {
+    return name;
 }
