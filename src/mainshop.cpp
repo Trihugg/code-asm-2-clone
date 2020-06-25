@@ -3,16 +3,24 @@
 
 using namespace std;
 
-// MainShop::MainShop()
-// {
-//     this->name = "Fash Shop";
-// }
+MainShop::MainShop(const string &name)
+{
+    this->name = name;
+}
 
 void MainShop::insert_product(ImportShop *product)
 {
     products.push_back(product);
     cout << "Insert completed" << endl;
 }
+
+void MainShop::insert_pro(Product *pro)
+{
+    pros.push_back(pro);
+    cout << "Insert completed" << endl;
+}
+
+
 
 void MainShop::show_product() const
 {
@@ -42,4 +50,9 @@ void MainShop::set_name(const string &name) {
 
 string MainShop::get_name() const {
     return name;
+}
+
+vector<Product *> MainShop::get_pros() const
+{
+    return pros;
 }

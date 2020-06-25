@@ -15,7 +15,8 @@ private:
     string type;
     int amount;
 public:
-    virtual void showImport() = 0;
+    virtual void showImport() = 0; // theem name , price
+    string get_name() const;
 };
 
 

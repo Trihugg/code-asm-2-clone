@@ -17,6 +17,7 @@ private:
 public:
     Product(const string &name, const int &price, const string &type, const int &amount);
     void show_info();
+    string get_name() const;
 };
 
 

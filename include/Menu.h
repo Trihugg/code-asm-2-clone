@@ -15,7 +15,7 @@ using namespace std;
 class Menu
 {
 private:
-    MainShop *shop;
+    vector <MainShop *> shops;
 public:
     void run();
     ~Menu();
@@ -24,6 +24,7 @@ private:
     void do_task(const int &choice);
     void add_item();
     int get_choice() const;
+    void delete_item();
     void print_all();
 
 

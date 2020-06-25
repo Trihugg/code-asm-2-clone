@@ -13,7 +13,7 @@ private:
 public:
     AdapterShop(const string &name, const int &price, const string &type, const int &amount);
     void showImport();
-    string get_name();
+    string get_name() const;
 };
 
 #endif
